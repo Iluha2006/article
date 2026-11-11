@@ -1,0 +1,236 @@
+/* ============================================================
+   Специфика страницы статьи
+   ============================================================ */
+
+/* ---------- Шапка статьи ---------- */
+
+.article-hero {
+  padding-top: 56px;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.article-meta__rubric {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.article-hero__title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 18px 0 20px;
+  text-wrap: balance;
+}
+
+.article-hero__lead {
+  font-size: var(--text-xl);
+  color: var(--color-ink-soft);
+  border-left: 3px solid var(--color-gold);
+  padding-left: 18px;
+  text-wrap: pretty;
+}
+
+/* ---------- Обложка ---------- */
+
+.cover {
+  margin-top: 36px;
+}
+
+.cover__image {
+  width: 100%;
+  aspect-ratio: 1200 / 630;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+/* ---------- Оглавление ---------- */
+
+.toc {
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  margin-top: 32px;
+}
+
+.toc__title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  margin-bottom: var(--space-3);
+}
+
+.toc__list {
+  list-style: none;
+  counter-reset: toc;
+}
+
+.toc__item {
+  counter-increment: toc;
+}
+
+.toc__link {
+  display: block;
+  color: var(--color-ink-soft);
+  text-decoration: none;
+  padding: 7px 0 7px 34px;
+  position: relative;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+}
+
+.toc__link::before {
+  content: counter(toc) ".";
+  position: absolute;
+  left: 6px;
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.toc__link:hover {
+  color: var(--color-accent);
+  background: var(--color-accent-soft);
+}
+
+.toc__link.is-active {
+  color: var(--color-accent);
+  font-weight: 600;
+  background: var(--color-accent-soft);
+}
+
+/* ---------- Тело статьи ---------- */
+
+.article-body {
+  margin-top: 48px;
+}
+
+.article-section {
+  margin-bottom: 52px;
+}
+
+.article-section__heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  line-height: var(--line-height-heading);
+  margin-bottom: 18px;
+  text-wrap: balance;
+}
+
+.article-section__num {
+  color: var(--color-gold);
+  margin-right: 6px;
+}
+
+.article-body p {
+  margin-bottom: var(--space-4);
+}
+
+.article-body p:last-child {
+  margin-bottom: 0;
+}
+
+.article-body .numbered-list {
+  margin: 0 0 var(--space-4) 22px;
+}
+
+.article-body .numbered-list li {
+  margin-bottom: 10px;
+}
+
+.article-section--tips {
+  counter-reset: tip;
+}
+
+/* ---------- Иллюстрации ---------- */
+
+.article-figure {
+  margin: 28px 0;
+}
+
+.article-figure__image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+
+.article-figure__caption {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ---------- Отступы для CTA и блока автора ---------- */
+
+.article-cta,
+.article-author {
+  margin: 52px 0;
+}
+
+.article-related {
+  margin-top: var(--space-8);
+  margin-bottom: 72px;
+}
+
+/* ---------- Адаптив ---------- */
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  .article-hero {
+    padding-top: 32px;
+  }
+
+  .article-hero__lead {
+    font-size: 1.08rem;
+    padding-left: 14px;
+  }
+
+  .cover {
+    margin-top: 26px;
+  }
+
+  .toc {
+    padding: 18px 18px;
+    margin-top: 20px;
+  }
+
+  .article-body {
+    margin-top: 36px;
+  }
+
+  .article-section {
+    margin-bottom: 40px;
+  }
+
+  .article-figure {
+    margin: 22px 0;
+  }
+
+  .article-cta,
+  .article-author {
+    margin: 40px 0;
+  }
+
+  .article-related {
+    margin-top: var(--space-7);
+    margin-bottom: 56px;
+  }
+}
