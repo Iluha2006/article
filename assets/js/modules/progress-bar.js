@@ -1,6 +1,4 @@
-/**
- * Прогресс чтения — полоса сверху страницы.
- */
+
 const FILL_ELEMENT_SELECTOR = '[data-progress-fill]';
 
 export function initProgressBar() {

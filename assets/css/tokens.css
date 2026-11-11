@@ -1,23 +1,19 @@
-/* ============================================================
-   Дизайн-токены проекта
-   Единственный источник правды о цветах, шрифтах и отступах.
-   ============================================================ */
+
 
 :root {
-  /* ---------- Палитра ---------- */
-  --color-ink: #1c2333;          /* основной текст */
-  --color-ink-soft: #4a5468;     /* вторичный текст */
-  --color-muted: #7a8299;        /* подписи, метаданные */
-  --color-paper: #faf9f7;        /* фон страницы */
-  --color-card: #ffffff;         /* фон карточек */
-  --color-line: #e5e1da;         /* разделители */
+
+  --color-ink: #1c2333;
+  --color-ink-soft: #4a5468;
+  --color-muted: #7a8299;
+  --color-paper: #faf9f7;
+  --color-card: #ffffff;
+  --color-line: #e5e1da;
 
   --color-accent: #2f5d8a;
   --color-accent-dark: #234a70;
   --color-accent-soft: #e8eff6;
   --color-gold: #c9a24b;
 
-  /* ---------- Типографика ---------- */
   --font-heading: "Playfair Display", Georgia, serif;
   --font-text: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
@@ -32,18 +28,15 @@
   --line-height-text: 1.75;
   --line-height-heading: 1.22;
 
-  /* ---------- Форма ---------- */
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-pill: 999px;
 
-  /* ---------- Тени ---------- */
   --shadow-card: 0 10px 30px rgba(28, 35, 51, 0.08);
   --shadow-btn: 0 8px 20px rgba(47, 93, 138, 0.3);
   --shadow-cta: 0 14px 34px rgba(35, 74, 112, 0.35);
   --shadow-fab: 0 6px 18px rgba(47, 93, 138, 0.4);
 
-  /* ---------- Отступы ---------- */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 12px;
@@ -53,7 +46,6 @@
   --space-7: 44px;
   --space-8: 56px;
 
-  /* ---------- Прочее ---------- */
   --container-width: 780px;
   --container-wide: 1080px;
   --header-height: 60px;

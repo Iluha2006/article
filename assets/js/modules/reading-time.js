@@ -1,7 +1,4 @@
-/**
- * Автоподсчёт времени чтения по объему текста статьи.
- * Для русского текста принята средняя скорость ~160 слов в минуту.
- */
+
 const BODY_SELECTOR = '[data-article-body]';
 const OUTPUT_SELECTOR = '[data-reading-time]';
 const WORDS_PER_MINUTE = 160;

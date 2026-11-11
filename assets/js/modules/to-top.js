@@ -1,6 +1,4 @@
-/**
- * Кнопка «наверх»: показывается после прокрутки и возвращает наверх.
- */
+
 const BUTTON_SELECTOR = '[data-to-top]';
 const SHOW_THRESHOLD_PX = 600;
 

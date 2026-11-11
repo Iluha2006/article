@@ -1,7 +1,4 @@
-/**
- * Входная точка: сборка и инициализация всех модулей страницы.
- * type="module" исполняется с defer — DOM к этому моменту готов.
- */
+
 import { initProgressBar } from './modules/progress-bar.js';
 import { initToTop } from './modules/to-top.js';
 import { initToc } from './modules/toc.js';

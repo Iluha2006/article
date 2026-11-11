@@ -1,6 +1,4 @@
-/**
- * FAQ-аккордеон: одновременно открыт не более одного вопроса.
- */
+
 const ITEM_SELECTOR = '[data-faq-item]';
 
 export function initFaq() {

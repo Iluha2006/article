@@ -1,6 +1,4 @@
-/**
- * Появление блоков статьи при скролле (эффект reveal).
- */
+
 const REVEAL_SELECTORS = [
   '.article-section',
   '.pull-quote',

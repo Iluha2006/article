@@ -1,8 +1,4 @@
-/* ============================================================
-   Специфика страницы статьи
-   ============================================================ */
 
-/* ---------- Шапка статьи ---------- */
 
 .article-hero {
   padding-top: 56px;
@@ -42,8 +38,6 @@
   text-wrap: pretty;
 }
 
-/* ---------- Обложка ---------- */
-
 .cover {
   margin-top: 36px;
 }
@@ -55,8 +49,6 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
 }
-
-/* ---------- Оглавление ---------- */
 
 .toc {
   background: var(--color-card);
@@ -110,8 +102,6 @@
   background: var(--color-accent-soft);
 }
 
-/* ---------- Тело статьи ---------- */
-
 .article-body {
   margin-top: 48px;
 }
@@ -153,8 +143,6 @@
   counter-reset: tip;
 }
 
-/* ---------- Иллюстрации ---------- */
-
 .article-figure {
   margin: 28px 0;
 }
@@ -175,8 +163,6 @@
   margin-top: 10px;
 }
 
-/* ---------- Отступы для CTA и блока автора ---------- */
-
 .article-cta,
 .article-author {
   margin: 52px 0;
@@ -186,8 +172,6 @@
   margin-top: var(--space-8);
   margin-bottom: 72px;
 }
-
-/* ---------- Адаптив ---------- */
 
 @media (max-width: 640px) {
   body {

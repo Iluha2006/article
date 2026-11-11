@@ -1,8 +1,4 @@
-/* ============================================================
-   Каркас страницы: шапка, подвал, фиксированные элементы
-   ============================================================ */
 
-/* ---------- Шапка ---------- */
 
 .site-header {
   position: sticky;
@@ -50,8 +46,6 @@
   color: var(--color-accent);
 }
 
-/* ---------- Прогресс чтения ---------- */
-
 .progress-bar {
   position: fixed;
   top: 0;
@@ -68,8 +62,6 @@
   background: linear-gradient(90deg, var(--color-accent), var(--color-gold));
   transition: width 0.1s linear;
 }
-
-/* ---------- Кнопка «наверх» ---------- */
 
 .to-top {
   position: fixed;
@@ -100,8 +92,6 @@
   background: var(--color-accent-dark);
 }
 
-/* ---------- Подвал ---------- */
-
 .site-footer {
   border-top: 1px solid var(--color-line);
   padding: 28px 0;
@@ -109,8 +99,6 @@
   color: var(--color-muted);
   font-size: var(--text-sm);
 }
-
-/* ---------- Адаптив ---------- */
 
 @media (max-width: 640px) {
   .site-header {
@@ -149,9 +137,6 @@
     height: 48px;
   }
 }
-
-/* На очень узких экранах (320–420px) дополнительно сжимаем шапку,
-   чтобы логотип, «Статьи», «Услуги» и кнопка помещались в одну строку */
 
 @media (max-width: 420px) {
   .site-header .container--wide {

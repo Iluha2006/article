@@ -1,6 +1,4 @@
-/**
- * Плавный скролл по якорным ссылкам с учётом высоты липкой шапки.
- */
+
 const HEADER_SELECTOR = '.site-header';
 const EXTRA_OFFSET_PX = 16;
 
